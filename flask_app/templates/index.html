@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- INDEX -->
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,18 +25,13 @@
   <main role="main">
     </div>
     <div class="container mt-4">
-      {% for cake in all_cakes %}
-      <div class="row card">
-        <div class="d-flex align-items-center">
-          <img src="{{ url_for('static', filename= cake.img_src ) }}" alt="" class="main-cake col-3">
-          <div class="col-1"></div>
-          <div class="col-6">
-            <h2 class="cake-name">{{ cake.name }}</h2>
-            <p>{{ cake.description }}</p>
-          </div>
+      
+      <div class="row">
+        <div class="col-3 m-2">
+          
         </div>
       </div>
-      {% endfor %}
+
     </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
