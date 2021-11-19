@@ -1,0 +1,28 @@
+<!-- //// HEADER //////// -->
+<header>
+    <div class="navbar navbar-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <img class="logo-img" src="{{ url_for('static', filename= '/img/aBakery_logo_white.png' ) }}"
+                alt="abakery logo">
+            <a class="btn btn-secondary " href="/">HOME</a>
+        </div>
+    </div>
+    <div class="navbar box-shadow navlinks">
+        <div class="container d-flex align-items-center justify-content-center">
+            <a class="col" href="">Lastest Cakes</a>
+            <a class="col" href="/cakes/birthday">Birthday Cakes</a>
+            <a class="col" href="/cakes/christening">Christening Cakes</a>
+            <a class="col" href="/cakes/debut">Debut Cakes</a>
+            <a class="col" href="/cakes/wedding">Wedding Cakes</a>
+            <a class="col" href="">About Us</a>
+        </div>
+        <div class="container d-flex align-items-center justify-content-center">
+            <form action='/cakes/search/post' method='post'>
+                <div class="search-group">
+                    <input class="search-input" type="text" id="search-item" name="search-item" placeholder="Enter Search Here . . .">
+                    <input class="btn btn-green" type="submit" value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
